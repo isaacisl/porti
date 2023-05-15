@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    top: 0;
+    background-color: #151515;
+    border-bottom: 3px solid #272727;
+    position: fixed;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #00d2df;
+    font-size: 32px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.nav-list ul li a:hover{
+    border-bottom: 2px solid aqua;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+.box-section {
+    margin-top: 80px;
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.box-section h1 {
+    color: #c4c4c4;
+    margin: 14px;
+    text-align: center;
+}
+
+.box-section span {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #00d2df;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.box-section .info-isaac {
+    margin-right: 250px;
+}
+
+.principal_input-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 42px;
+    background-color: white;
+    position: relative;
+    top: 3px;
+    animation: blink 0.6s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.principal-botao {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.principal-botao i {
+    border-radius: 20px;
+    margin: 10px;
+
+}
+
+.principal-botao a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 0 12px;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    display: inline-block; /* defina o display como inline-block para ajustar a largura */
+    width: auto; /* defina a largura como auto para garantir que ela seja calculada corretamente */
+  }
+  
+  .principal-botao a:hover {
+    background: #003840;
+    border-bottom-color: #00d2df;
+    border-radius: 20px;
+  }
+  
+
+
+.box-section .imagem-isaac img {
+
+    width: 250px;
+    height: 250px;
+
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgb(7, 152, 248);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+/* SOBRE MIM */
+
+.box-sobre{
+    display: flex;
+    align-items: center;
+    background-color: #151515;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    height: 100vh;
+}
+
+.info-sobre{
+    margin-left: 70px;
+    color:#c4c4c4;
+    text-align: justify;
+    width: 50%;
+    
+}
+.info-sobre  p{
+    padding-top: 25px;
+    font-size: 18px;
+
+}
+
+.info-sobre h1{
+    margin-top: 50px;
+    font-size: 23px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: left;
+}
+
+.info-sobre span{
+    font-size: 21px;
+    font-style: italic;
+}
+
+
+.img-sobre img{
+    width: 298px;
+    height: 298px;
+    margin-left: 100px;
+    border-left: 5px solid  #00d2df ;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
+  /* PROJETOS */
+#projetos span{
+    font-size: 33px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-projetos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 600px;
+    margin-left: 50px;
+    color:#c4c4c4;
+}
+.all h1{
+    text-align: center;
+    margin-top:25px;
+    color:#c4c4c4;
+}
+
+.all p{
+    margin-top: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.all img{
+    width: 100%;
+    height: 230px;
+}
+.visualizar{
+    border: 1px solid #00d2df;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  .visualizar a{
+    text-decoration: none;
+    color: white;
+    
+  }
+  
+  .visualizar i{
+    font-size: 20px;
+  }
+  
+  .visualizar:hover {
+    background-color: rgb(158, 149, 149);
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+    
+  }
+/* PARTE RESPONSIVA DO SITE */
+
+
+@media screen and (max-width: 999px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+        position: static;
+    }
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+    .box-section{
+        display: flex;
+        
+        min-width: 399px;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .box-section .info-isaac{
+        text-align: center;
+        margin-left: 260px;
+    }
+
+    .box-section .imagem-isaac{
+        margin-top: 20px;
+    }
+
+    .box-section .imagem-isaac img{
+        
+        animation: none !important;
+    }
+    .box-sobre{
+        margin-top: 80px;
+        padding-right: 67px;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+       
+    }
+
+    .info-sobre{
+        min-width: 100%;
+    }
+
+    .box-sobre .info-sobre p{
+        width: 100%;
+        padding-top: 0;
+        font-size: 14px;
+        
+    }
+
+    .box-sobre .info-sobre h1{
+         text-align: center;
+         padding-bottom: 0;
+    }
+    .box-sobre .info-sobre span{
+        padding-top: 0;
+        font-size: 18px;
+        font-style: italic;
+   }
+
+   .box-sobre .img-sobre{
+    margin-top: 45px;
+   }
+
+   .box-projetos{
+    
+    max-width: 100%;
+   }
+
+
+
+}
